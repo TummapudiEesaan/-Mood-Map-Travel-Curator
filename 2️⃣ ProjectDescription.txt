@@ -1,0 +1,85 @@
+PROJECT TITLE:
+Mood-Map Travel Curator
+
+PROJECT DOMAIN:
+Artificial Intelligence, Travel Technology, Psychology-Based Recommendation Systems
+
+PROJECT DESCRIPTION
+
+The Mood-Map Travel Curator is an AI-powered travel recommendation system that combines psychology, artificial intelligence, and tourism data to recommend destinations based on a traveler’s emotional state.
+
+Traditional travel recommendation systems typically ask users about locations or travel preferences. However, human travel decisions are often influenced by emotional needs such as relaxation, adventure, reflection, or escape.
+
+The Mood-Map system takes a different approach by asking users a psychological question:
+
+"How do you want to feel?"
+
+Users can describe their emotional state such as feeling overwhelmed, stressed, adventurous, curious, or reflective.
+
+The system then analyzes the emotional input and maps it to suitable destinations in Jammu & Kashmir. Each destination is associated with emotional categories based on environmental characteristics such as tranquility, adventure potential, scenic beauty, and cultural richness.
+
+To generate intelligent responses, the system integrates a Large Language Model (LLM). The model uses the retrieved emotional-location mapping as context to generate meaningful travel recommendations.
+
+The AI provides:
+
+• Suitable destinations
+• Emotional reasoning
+• Suggested experiences
+• Mini travel itinerary
+
+The system is implemented using Streamlit, which provides a lightweight web interface that allows users to interact with the recommendation engine easily.
+
+KEY FEATURES
+
+• Emotion-based travel recommendations
+• AI-generated travel explanations
+• Simple interactive web interface
+• Personalized travel suggestions
+• Psychological travel mapping
+
+TECHNOLOGIES USED
+
+Programming Language:
+Python
+
+Frontend Interface:
+Streamlit
+
+AI Model:
+Large Language Model API (OpenAI / Gemini)
+
+Data Storage:
+Text-based emotion-location dataset
+
+CORE CONCEPTS
+
+• Emotion-based recommendation systems
+• Generative AI
+• Prompt engineering
+• Context injection
+• Human-centered travel design
+
+APPLICATIONS
+
+• Mental wellness travel platforms
+• Tourism recommendation systems
+• Digital travel assistants
+• AI-powered therapy travel suggestions
+
+LIMITATIONS
+
+• Limited to predefined location dataset
+• Emotional interpretation may vary
+• Requires internet connection for LLM API
+
+FUTURE IMPROVEMENTS
+
+• Add emotion detection using NLP sentiment analysis
+• Integrate larger travel databases
+• Add map visualization
+• Integrate weather and seasonal data
+• Add multi-destination itinerary generation
+
+CONCLUSION
+
+The Mood-Map Travel Curator demonstrates how psychological insights can be integrated with AI technologies to create emotionally intelligent travel recommendation systems. By focusing on human emotions rather than locations alone, the system creates more meaningful and personalized travel experiences.

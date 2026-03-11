@@ -1,0 +1,85 @@
+PROJECT TITLE:
+Mood-Map Travel Curator – Psychology Based Travel Recommendation System
+
+TECHNOLOGIES USED:
+Python, Streamlit, Large Language Model API (OpenAI / Gemini), Text-based location dataset
+
+ALGORITHM EXPLANATION
+
+Step 1: Start the program.
+
+Step 2: Import required Python libraries.
+        - streamlit for building the web interface.
+        - os for environment variables.
+        - LLM API library (openai or google generative ai).
+        - json or file handling libraries for reading the location dataset.
+
+Step 3: Load emotional travel dataset.
+        - Open the file "jk_emotion_locations.txt".
+        - Read the file containing mappings between emotions and locations.
+        - Store the information in memory.
+
+Step 4: Initialize Streamlit interface.
+        - Display application title.
+        - Display short description of the system.
+        - Explain to the user how the system works.
+
+Step 5: Display emotion input options.
+        - Allow users to input emotions manually.
+        - Alternatively provide emotion selection buttons.
+
+Examples:
+        • I feel stressed
+        • I want adventure
+        • I feel overwhelmed
+        • I need calm nature
+
+Step 6: Capture user emotion input.
+        - Store the emotional input in a variable.
+
+Step 7: Preprocess the emotional input.
+        - Convert text to lowercase.
+        - Remove unnecessary punctuation.
+        - Extract key emotional keywords.
+
+Step 8: Perform emotional mapping.
+        - Compare emotional keywords with the emotion-location dataset.
+        - Identify matching emotional categories.
+
+Step 9: Retrieve related travel locations.
+        - Extract locations that correspond to the detected emotion.
+
+Example:
+
+Emotion: Peaceful
+Locations:
+        • Yusmarg Meadows
+        • Doodhpathri Valley
+        • Gurez Valley
+
+Step 10: Prepare context for the AI model.
+        - Combine emotional input with retrieved locations.
+        - Build contextual prompt.
+
+Step 11: Construct LLM prompt.
+        - The prompt instructs the AI to act as a psychology-based travel advisor.
+
+Example prompt:
+        "A traveler feels overwhelmed and needs silence. Suggest a calming itinerary using the following locations."
+
+Step 12: Send prompt to LLM API.
+
+Step 13: Receive generated response.
+        - AI generates travel recommendation.
+        - AI explains why locations match the emotional state.
+
+Step 14: Display recommendations in Streamlit UI.
+
+Step 15: Show:
+        - Suggested locations
+        - Psychological reasoning
+        - Mini itinerary
+
+Step 16: Allow the user to explore another mood.
+
+Step 17: End program when user exits application.

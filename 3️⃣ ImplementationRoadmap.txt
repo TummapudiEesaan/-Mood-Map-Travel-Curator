@@ -1,0 +1,135 @@
+IMPLEMENTATION ROADMAP
+Mood-Map Travel Curator
+
+Phase 1: Environment Setup
+
+Step 1: Install Python
+        Install Python version 3.8 or higher.
+
+Step 2: Install required libraries
+
+        pip install streamlit
+        pip install openai
+        or
+        pip install google-generativeai
+
+Step 3: Verify installations.
+
+------------------------------------------------
+
+Phase 2: Project Structure Setup
+
+Create the following directory structure:
+
+MoodMapTravelCurator
+|
+|-- app.py
+|-- jk_emotion_locations.txt
+|-- AlgorithmExplanation.txt
+|-- ProjectDescription.txt
+|-- ImplementationRoadmap.txt
+|-- SystemArchitectureExplanation.txt
+|-- README.md
+
+------------------------------------------------
+
+Phase 3: Create Emotion-Location Dataset
+
+Step 1: Create jk_emotion_locations.txt
+
+Step 2: Add entries such as:
+
+Emotion: Peaceful
+Locations:
+Yusmarg Meadows
+Doodhpathri Valley
+Gurez Valley
+
+Emotion: Adventure
+Locations:
+Sonamarg Trek
+Tarsar Marsar Trek
+Kolahoi Glacier
+
+Emotion: Reflection
+Locations:
+Dal Lake Shikara Ride
+Aru Valley
+Betaab Valley
+
+Step 3: Save dataset.
+
+------------------------------------------------
+
+Phase 4: Develop Streamlit Interface
+
+Step 1: Create app.py
+
+Step 2: Initialize Streamlit.
+
+Step 3: Add:
+
+• Application title
+• Short description
+• Emotion input box
+
+Step 4: Add button to generate recommendation.
+
+------------------------------------------------
+
+Phase 5: Implement Emotion Matching Logic
+
+Step 1: Load dataset.
+
+Step 2: Extract emotional categories.
+
+Step 3: Match user emotion with dataset.
+
+Step 4: Retrieve relevant locations.
+
+------------------------------------------------
+
+Phase 6: Integrate LLM
+
+Step 1: Create prompt template.
+
+Step 2: Inject:
+
+• emotional state
+• matching locations
+
+Step 3: Send prompt to LLM API.
+
+Step 4: Receive response.
+
+------------------------------------------------
+
+Phase 7: Display Results
+
+Step 1: Show:
+
+• Suggested locations
+• Emotional explanation
+• Travel ideas
+
+Step 2: Display results using Streamlit components.
+
+------------------------------------------------
+
+Phase 8: Testing
+
+Test emotional inputs such as:
+
+"I feel stressed."
+
+"I want adventure."
+
+"I want peaceful nature."
+
+Verify if recommendations match emotions.
+
+------------------------------------------------
+
+Phase 9: Final Documentation
+
+Prepare project documentation files.

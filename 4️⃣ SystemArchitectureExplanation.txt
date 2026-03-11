@@ -1,0 +1,162 @@
+SYSTEM ARCHITECTURE EXPLANATION
+Mood-Map Travel Curator
+
+INTRODUCTION
+
+The Mood-Map Travel Curator follows a layered architecture that integrates user interaction, emotional analysis, knowledge retrieval, and AI-based recommendation generation.
+
+The system consists of six major components.
+
+SYSTEM COMPONENTS
+
+1. User Interface Layer
+2. Emotion Processing Module
+3. Emotion-Location Knowledge Base
+4. Retrieval Module
+5. Prompt Construction Module
+6. AI Recommendation Engine
+7. Output Display Module
+
+------------------------------------------------
+
+1. USER INTERFACE LAYER
+
+The user interface is implemented using Streamlit.
+
+Functions:
+
+• Display application title
+• Accept emotional input
+• Display travel recommendations
+
+The interface acts as the entry point for user interaction.
+
+------------------------------------------------
+
+2. EMOTION PROCESSING MODULE
+
+This module processes the emotional input from the user.
+
+Tasks performed:
+
+• Convert text to lowercase
+• Remove unnecessary characters
+• Identify emotional keywords
+
+Example emotional inputs:
+
+• stressed
+• overwhelmed
+• adventurous
+• reflective
+
+------------------------------------------------
+
+3. EMOTION-LOCATION KNOWLEDGE BASE
+
+The knowledge base contains mappings between emotions and travel locations.
+
+File:
+jk_emotion_locations.txt
+
+This dataset contains curated travel knowledge for Jammu & Kashmir.
+
+Example:
+
+Emotion → Peaceful
+Locations → Yusmarg, Doodhpathri
+
+Emotion → Adventure
+Locations → Sonamarg Trek
+
+------------------------------------------------
+
+4. RETRIEVAL MODULE
+
+The retrieval module searches the dataset for locations matching the detected emotion.
+
+Operations:
+
+• Compare emotional keywords
+• Retrieve relevant destinations
+• Rank possible recommendations
+
+------------------------------------------------
+
+5. PROMPT CONSTRUCTION MODULE
+
+This module prepares the AI input prompt.
+
+The prompt includes:
+
+• User emotion
+• Retrieved travel locations
+
+Example prompt:
+
+"A traveler feels overwhelmed and wants peace. Suggest a calm travel itinerary using the following locations."
+
+------------------------------------------------
+
+6. AI RECOMMENDATION ENGINE
+
+The prompt is sent to a Large Language Model through an API.
+
+Possible models:
+
+• OpenAI GPT
+• Google Gemini
+
+The model generates personalized travel recommendations.
+
+------------------------------------------------
+
+7. OUTPUT DISPLAY MODULE
+
+The output module displays recommendations through the Streamlit interface.
+
+Displayed information includes:
+
+• Suggested destinations
+• Emotional reasoning
+• Suggested experiences
+• Short itinerary
+
+------------------------------------------------
+
+SYSTEM DATA FLOW
+
+User Emotion Input
+        ↓
+Emotion Processing
+        ↓
+Knowledge Base Retrieval
+        ↓
+Prompt Construction
+        ↓
+AI Recommendation Engine
+        ↓
+Travel Recommendations
+        ↓
+Streamlit Output Interface
+
+------------------------------------------------
+
+SYSTEM REQUIREMENTS
+
+Hardware Requirements
+
+• Standard computer
+• Internet connectivity
+
+Software Requirements
+
+• Python 3.8+
+• Streamlit
+• LLM API access
+
+------------------------------------------------
+
+CONCLUSION
+
+The Mood-Map Travel Curator architecture combines psychological emotion analysis with AI-based recommendation systems to provide meaningful travel suggestions. This approach allows the system to recommend destinations based on how travelers feel rather than simply where they want to go.
